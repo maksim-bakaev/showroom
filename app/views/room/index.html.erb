@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">    <!-- So that mobile webkit will display zoomed in -->
+    <meta name="format-detection" content="telephone=no"> <!-- disable auto telephone linking in iOS -->
+
+    <title>Antwort - responsive Email Layout</title>
+    <style type="text/css">
+
+        /* Resets: see reset.css for details */
+        .ReadMsgBody { width: 100%; background-color: #ebebeb;}
+        .ExternalClass {width: 100%; background-color: #ebebeb;}
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height:100%;}
+        body {-webkit-text-size-adjust:none; -ms-text-size-adjust:none;}
+        body {margin:0; padding:0;}
+        table {border-spacing:0;}
+        table td {border-collapse:collapse;}
+        .yshortcuts a {border-bottom: none !important;}
+
+
+        /* Constrain email width for small screens */
+        @media screen and (max-width: 600px) {
+            table[class="container"] {
+                width: 95% !important;
+            }
+        }
+
+        /* Give content more room on mobile */
+        @media screen and (max-width: 480px) {
+            td[class="container-padding"] {
+                padding-left: 12px !important;
+                padding-right: 12px !important;
+            }
+        }
+
+
+        /* Styles for forcing columns to rows */
+        @media only screen and (max-width : 600px) {
+
+            /* force container columns to (horizontal) blocks */
+            td[class="force-col"] {
+                display: block;
+                padding-right: 0 !important;
+            }
+            table[class="col-3"] {
+                /* unset table align="left/right" */
+                float: none !important;
+                width: 98% !important;
+
+                /* change left/right padding and margins to top/bottom ones */
+                margin-bottom: 12px;
+                padding-bottom: 12px;
+                border-bottom: 1px solid #eee;
+            }
+
+            /* remove bottom border for last column/row */
+            table[id="last-col-3"] {
+                border-bottom: none !important;
+                margin-bottom: 0;
+            }
+
+            /* align images right and shrink them a bit */
+            img[class="col-3-img"] {
+                float: left;
+                margin-right: 10px;
+                max-width: 150px;
+            }
+        }
+
+    </style>
+</head>
+<body style="margin:0; padding:10px 0;  background-color: #488fc7; background-image: url('http://pokupon.ua/assets/new_design2012/images/mass_mailing/new/bg.png'); background-repeat: repeat;" bgcolor="#488fc7" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<br>
+
+<!-- 100% wrapper (grey background) -->
+<table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" bgcolor="#ccc">
+  <tr>
+    <td align="center" valign="top" bgcolor="#ebebeb" style="background-color: #488fc7; background-image: url('http://pokupon.ua/assets/new_design2012/images/mass_mailing/new/bg.png'); background-repeat: repeat;">
+
+      <!-- 600px container (white background) -->
+      <table border="0" width="600" cellpadding="0" cellspacing="0" class="container" bgcolor="#cfedfe" style="border: 1px solid #dddddd;">
+        <tr>
+          <td class="container-padding" bgcolor="#ffffff" style="background-color: #ffffff; padding-left: 30px; padding-right: 30px; font-size: 13px; line-height: 20px; font-family: Helvetica, sans-serif; color: #333;" align="left">
+            <br>
+
+            <!-- ### BEGIN CONTENT ### -->
+            
+            <div style="margin-right: 10px; margin-left: 10px; border-bottom: 1px solid #ddd;">
+              
+              <div style="font-weight: bold; font-size: 18px; line-height: 24px; color: #D03C0F;"><br>3, 5 или 8 дней для двоих в шикарном отеле «Веселые птички» на берегу Чёрного моря!</div>
+              <br>
+              
+              <img alt="img" src="http://pokupon.ua/uploaded/new_campaign_pictures/16104/data/main620x292/pt345.jpg?1370346352" width="630" height="298" style="max-width: 100%; display: block; border:0; height: auto;">
+              <p>
+              Планируете отдых со своей второй половинкой, но никак не можете определиться, куда бы поехать? 
+              Приглашаем вас на побережье Черного моря на курорт Затока, в шикарный отель «Веселые птички»! Это идеальное место для активного отдыха молодых, энергичных и требовательных к комфорту людей!
+              </p>
+              <p>
+              Мы предлагаем вам до 53% скидки на проживание 3, 5 или 8 дней для двоих в отеле «Веселые птички» на берегу Чёрного моря! Это будет незабываемое лето!
+              </p>
+              <p>
+              Номера отеля оборудованы всем необходим...
+              </p>
+              <br>
+            </div>
+            
+            <br>
+            <br>
+
+            <table border="0" cellpadding="0" cellspacing="0" class="columns-container">
+              <tr>
+                <td class="force-col" style="padding-right: 10px; padding-left: 10px;" valign="top">
+
+                    <!-- ### COLUMN 1 ### -->
+                    <table border="0" cellspacing="0" cellpadding="0" width="175" align="left" class="col-3">
+                    <tr>
+                        <td align="left" valign="top" style="font-size:13px; line-height: 20px; font-family: Arial, sans-serif;">
+                          <a rel="nofollow" href="#" style="color: #454e55; text-decoration: none;">
+                            <img src="http://pokupon.ua/uploaded/new_campaign_pictures/15936/data/main305x145/rest1.jpg?1369750957" alt="Image Caption" border="0" hspace="0" vspace="0" style="vertical-align:top; padding-bottom:12px;" class="col-3-img">
+                            <div style="display: block; height: 45px; max-height: 45px; line-height: 15px; overflow: hidden; font-size: 13px; font-weight: normal; color: #454e55; text-decoration: none;">Изысканный ужин для 2, 4 или 8 чел. в панорамном ресторане «Asteri»: салаты, основные блюда, закуски, десерты, напитки!&hellip;</div>
+                          </a>
+                          <p style="margin:0; float:left; display:block; font-family: 'Trebuchet MS', Ubuntu, Helvetica, sans-serif; font-size:11px; font-weight:normal; height:29px; line-height:29px; margin-left:0px; width:180px;">
+                            <span>Цена:</span>
+                            <b style="font-size:12px; color:#47657b;">
+                            449</b> грн. <span style="padding-left:5px;">Скидка:</span>
+                            <b style="font-size:12px; color:#47657b;">
+                            52%</b>
+                          </p>
+                          <br>
+                          <br>
+                        </td>
+                    </tr>
+                    </table>
+
+                </td>
+                <td class="force-col" style="padding-right: 10px; padding-left: 10px;" valign="top">
+
+                    <!-- ### COLUMN 2 ### -->
+                    <table border="0" cellspacing="0" cellpadding="0" width="175" align="left" class="col-3">
+                    <tr>
+                        <td align="left" valign="top" style="font-size:13px; line-height: 20px; font-family: Arial, sans-serif;">
+                          <a rel="nofollow" href="#" style="color: #454e55; text-decoration: none;">
+                            <img src="http://pokupon.ua/uploaded/new_campaign_pictures/15936/data/main305x145/rest1.jpg?1369750957" alt="Image Caption" border="0" hspace="0" vspace="0" style="vertical-align:top; padding-bottom:12px;" class="col-3-img">
+                            <div style="display: block; height: 45px; max-height: 45px; line-height: 15px; overflow: hidden; font-size: 13px; font-weight: normal; color: #454e55; text-decoration: none;">Изысканный ужин для 2, 4 или 8 чел. в панорамном ресторане «Asteri»: салаты, основные блюда, закуски, десерты, напитки!&hellip;</div>
+                          </a>
+                          <p style="margin:0; float:left; display:block; font-family: 'Trebuchet MS', Ubuntu, Helvetica, sans-serif; font-size:11px; font-weight:normal; height:29px; line-height:29px; margin-left:0px; width:180px;">
+                            <span>Цена:</span>
+                            <b style="font-size:12px; color:#47657b;">
+                            449</b> грн. <span style="padding-left:5px;">Скидка:</span>
+                            <b style="font-size:12px; color:#47657b;">
+                            52%</b>
+                          </p>
+                          <br>
+                          <br>
+                        </td>
+                    </tr>
+                    </table>
+
+                </td>
+              </tr>
+              <tr>
+                <td class="force-col" style="padding-right: 10px; padding-left: 10px;" valign="top">
+
+                    <!-- ### COLUMN 1 ### -->
+                    <table border="0" cellspacing="0" cellpadding="0" width="175" align="left" class="col-3">
+                    <tr>
+                        <td align="left" valign="top" style="font-size:13px; line-height: 20px; font-family: Arial, sans-serif;">
+                          <a rel="nofollow" href="#" style="color: #454e55; text-decoration: none;">
+                            <img src="http://pokupon.ua/uploaded/new_campaign_pictures/15936/data/main305x145/rest1.jpg?1369750957" alt="Image Caption" border="0" hspace="0" vspace="0" style="vertical-align:top; padding-bottom:12px;" class="col-3-img">
+                            <div style="display: block; height: 45px; max-height: 45px; line-height: 15px; overflow: hidden; font-size: 13px; font-weight: normal; color: #454e55; text-decoration: none;">Изысканный ужин для 2, 4 или 8 чел. в панорамном ресторане «Asteri»: салаты, основные блюда, закуски, десерты, напитки!&hellip;</div>
+                          </a>
+                          <p style="margin:0; float:left; display:block; font-family: 'Trebuchet MS', Ubuntu, Helvetica, sans-serif; font-size:11px; font-weight:normal; height:29px; line-height:29px; margin-left:0px; width:180px;">
+                            <span>Цена:</span>
+                            <b style="font-size:12px; color:#47657b;">
+                            449</b> грн. <span style="padding-left:5px;">Скидка:</span>
+                            <b style="font-size:12px; color:#47657b;">
+                            52%</b>
+                          </p>
+                          <br>
+                          <br>
+                        </td>
+                    </tr>
+                    </table>
+
+                </td>
+                <td class="force-col" style="padding-right: 10px; padding-left: 10px;" valign="top">
+
+                    <!-- ### COLUMN 2 ### -->
+                    <table border="0" cellspacing="0" cellpadding="0" width="175" align="left" class="col-3">
+                    <tr>
+                        <td align="left" valign="top" style="font-size:13px; line-height: 20px; font-family: Arial, sans-serif;">
+                          <a rel="nofollow" href="#" style="color: #454e55; text-decoration: none;">
+                            <img src="http://pokupon.ua/uploaded/new_campaign_pictures/15936/data/main305x145/rest1.jpg?1369750957" alt="Image Caption" border="0" hspace="0" vspace="0" style="vertical-align:top; padding-bottom:12px;" class="col-3-img">
+                            <div style="display: block; height: 45px; max-height: 45px; line-height: 15px; overflow: hidden; font-size: 13px; font-weight: normal; color: #454e55; text-decoration: none;">Изысканный ужин для 2, 4 или 8 чел. в панорамном ресторане «Asteri»: салаты, основные блюда, закуски, десерты, напитки!&hellip;</div>
+                          </a>
+                          <p style="margin:0; float:left; display:block; font-family: 'Trebuchet MS', Ubuntu, Helvetica, sans-serif; font-size:11px; font-weight:normal; height:29px; line-height:29px; margin-left:0px; width:180px;">
+                            <span>Цена:</span>
+                            <b style="font-size:12px; color:#47657b;">
+                            449</b> грн. <span style="padding-left:5px;">Скидка:</span>
+                            <b style="font-size:12px; color:#47657b;">
+                            52%</b>
+                          </p>
+                          <br>
+                          <br>
+                        </td>
+                    </tr>
+                    </table>
+
+                </td>
+              </tr>
+              
+            </table><!--/ end .columns-container-->
+
+        </td>
+    </tr>
+    <tr>
+        <td class="container-padding" bgcolor="#ffffff" style="background-color: #ffffff; padding-left: 30px; padding-right: 30px; font-size: 13px; line-height: 20px; font-family: Helvetica, sans-serif; color: #333;" align="left">
+          <br>
+          <div style="margin-right: 10px; margin-left: 10px; border-top: 1px solid #ddd;">
+            <div style="font-weight: bold; font-size: 18px; line-height: 24px; color: #D03C0F;"><br>Как это работает</div>
+            <br>
+            Вы получили это письмо, потому что подписаны на рассылку на сайте pokupon.ua Если вы не хотите получать почту Покупона - отпишитесь от нее в своем профиле или здесь. Некорректно отображается письмо? Онлайн-версия Данное письмо предназначенно только Вам и содержит Ваши персональные данные,пересылая его третим лицам вы полностью берете на себя ответственность за последствия.
+            <br><br>
+            <!-- ### END CONTENT ### -->
+            <br><br>
+          </div>
+          </td>
+        </tr>
+      </table>
+      <!--/600px container -->
+
+    </td>
+  </tr>
+</table>
+<!--/100% wrapper-->
+<br>
+<br>
+</body>
+</html>
+
