@@ -1,4 +1,6 @@
 Showroom::Application.routes.draw do
+  get "dashboard/index"
+
   get "room/index"
 
   #get "welcome/index"
