@@ -6,4 +6,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+//= require bootstrap
+//= require dashboard/jquery.masonry.min
+//= require dashboard/modernizr-transitions
