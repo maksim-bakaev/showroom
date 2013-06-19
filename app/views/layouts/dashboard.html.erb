@@ -10,7 +10,7 @@
 
   <style type="text/css">
     body {}
-	.item {
+	.item-mas {
 		float:left /* ОБЯЗАТЕЛЬНО задаем блокам float */; 
 		width:19%; /*min-height:280px; */
 		margin:0.5%;
@@ -29,7 +29,7 @@
 <script type="text/javascript">
   $(document).ready(function(){ 
 	$('#container').masonry({ // выбираем элемент-контейнер в котором расположены блоки для динамической верстки
-	  itemSelector: '.item', // указываем класс элемента являющегося блоком в нашей сетке
+	  itemSelector: '.item-mas', // указываем класс элемента являющегося блоком в нашей сетке
 	  singleMode: true, // true - если у вас все блоки одинаковой ширины
 	  resizeable: true, // перестраивает блоки при изменении размеров окна
 	  isAnimated: !Modernizr.csstransitions // анимируем перестроение блоков при помощи css transitions и Modernizr
@@ -40,12 +40,24 @@
 </head>
 
 <body>
-  <div class="header">
-    <div class="root-container">
-      logo/filter
+  <%=render 'layouts/head' %>
+  <%= yield %>
+  
+  <!-- Modal -->
+  <div id="myModal" class="modal hide fade higherWider" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      <h3 id="myModalLabel">20, 40 или 60 сеансов коррекции фигуры в течение полугода в Тонус-клубе на Подоле. Сертификаты на 6 месяцев!</h3>
+    </div>
+    <div class="modal-body">
+      <%=render 'dashboard/test/show' %>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-primary btn-block">Купить</button>
     </div>
   </div>
-  <%= yield %>
+  <!-- /Modal -->
+  
 </body>
 </html>
 
