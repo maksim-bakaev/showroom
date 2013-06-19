@@ -1,5 +1,14 @@
+/*Var color*/
+
+
+
+
 /*Scaffolding*/
 $bodyBackground: #cfedfe;
+
+/* typography */
+$sansFontFamily: 'PT Sans Narrow', 'Lucida Grande', serif;
+$baseFontSize: 16px;
 
 @import 'bootstrap';
 @import 'bootstrap/responsive';
