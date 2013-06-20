@@ -4,22 +4,6 @@
   <title>Showroom</title>
   <%= csrf_meta_tags %>
   <%= stylesheet_link_tag    "application" %>
-  <style type="text/css">
-    body {}
-	.box {
-		float:left /* ОБЯЗАТЕЛЬНО задаем блокам float */; 
-		width:228px; /*min-height:280px; */
-		margin:5px;
-
-		/* параметры анимации */
--webkit-transition-duration: 0.5s;
-   -moz-transition-duration: 0.5s;
-	 -o-transition-duration: 0.5s;
-		transition-duration: 0.5s;
-		}	
-
-	.tall {}
-  </style>
 </head>
 <body>
 
@@ -42,7 +26,6 @@
   <!-- /Modal -->
 
   <%= javascript_include_tag "application" %>
-  <%= javascript_include_tag "dashboard/jquery.isotope" %>
 
   <script type="text/javascript">
 

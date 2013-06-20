@@ -6,6 +6,17 @@ body{
 	margin: 0;
 }
 
+.box {
+float:left; /* ОБЯЗАТЕЛЬНО задаем блокам float */
+width:228px; /*min-height:280px; */
+margin:5px;
+/* параметры анимации */
+-webkit-transition-duration: 0.5s;
+-moz-transition-duration: 0.5s;
+-o-transition-duration: 0.5s;
+transition-duration: 0.5s;
+}
+
 
 body > .navbar .brand {
 	padding: 5px;
