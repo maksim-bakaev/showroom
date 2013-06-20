@@ -1,34 +1,31 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Masonry — JQuery плагин для динамического отображения контента</title>
-
+  <title>Showroom</title>
+  <%= csrf_meta_tags %>
   <%= stylesheet_link_tag    "application" %>
-
   <style type="text/css">
     body {}
-	.item-mas {
+	.box {
 		float:left /* ОБЯЗАТЕЛЬНО задаем блокам float */; 
-		width:19%; /*min-height:280px; */
-		margin:0.5%;
-		
+		width:228px; /*min-height:280px; */
+		margin:5px;
+
 		/* параметры анимации */
 -webkit-transition-duration: 0.5s;
    -moz-transition-duration: 0.5s;
 	 -o-transition-duration: 0.5s;
 		transition-duration: 0.5s;
 		}	
-		
+
 	.tall {}
   </style>
-
 </head>
-
 <body>
+
   <%=render 'layouts/head' %>
   <%= yield %>
-  
+
   <!-- Modal -->
   <div id="myModal" class="modal hide fade higherWider" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-header">
@@ -43,18 +40,39 @@
     </div>
   </div>
   <!-- /Modal -->
+
   <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "dashboard/jquery.isotope" %>
+
   <script type="text/javascript">
-    $(document).ready(function(){ 
-  	$('#container').masonry({ // выбираем элемент-контейнер в котором расположены блоки для динамической верстки
-  	  itemSelector: '.item-mas', // указываем класс элемента являющегося блоком в нашей сетке
-  	  singleMode: true, // true - если у вас все блоки одинаковой ширины
-  	  resizeable: true, // перестраивает блоки при изменении размеров окна
-  	  isAnimated: !Modernizr.csstransitions // анимируем перестроение блоков при помощи css transitions и Modernizr
-  	}); 
-    });
+
+  $(document).ready(function(){
+  var $container = $('#content');
+  $container.isotope({
+  filter: '*',
+  animationOptions: {
+   duration: 750,
+   easing: 'linear',
+   queue: false,
+  }
+  });
+
+  $('#nav a').click(function(){
+  var selector = $(this).attr('data-filter');
+  $container.isotope({ 
+  filter: selector,
+  animationOptions: {
+   duration: 750,
+   easing: 'linear',
+   queue: false,
+
+  }
+  });
+  return false;
+  });
+
+  });
   </script>
-  
+
 </body>
 </html>
-
