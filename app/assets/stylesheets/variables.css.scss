@@ -1,7 +1,17 @@
+$sansFontFamily: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$baseFontSize: 12px;
+$baseFontFamily: $sansFontFamily;
+
 /*Var color*/
+$grayDarklight: rgba(0,0,0,.4);
+$Whitelight: rgba(0,0,0,.4);
 
+/*Dropdowns*/
 
-
+$dropdownBackground: rgba(255,255,255,.9);
+$dropdownBorder: rgba(0,0,0,.2);
+$dropdownLinkBackgroundHover: $grayDarklight;
 
 /*Scaffolding*/
 $bodyBackground: #cfedfe;
@@ -12,3 +22,11 @@ $baseFontSize: 16px;
 
 @import 'bootstrap';
 @import 'bootstrap/responsive';
+
+/*Custom*/
+
+.dropdown-menu{
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
