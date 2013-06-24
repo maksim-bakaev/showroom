@@ -35,8 +35,8 @@ body > .navbar .brand {
 
 /*Modal Show*/
 .modal.higherWider {
-	width: 700px;
-	margin-left: -350px; /*half of the width*/
+	width: 1100px;
+	margin-left: -550px; /*half of the width*/
 }
 
 /*List*/

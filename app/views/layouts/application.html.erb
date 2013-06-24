@@ -7,7 +7,7 @@
 </head>
 <body>
 
-  <%=render 'layouts/head' %>
+  <%=render 'layouts/head' %>  
   <%= yield %>
 
   <!-- Modal -->
@@ -26,6 +26,13 @@
   <!-- /Modal -->
 
   <%= javascript_include_tag "application" %>
+  
+  <script>
+    $('#myTab a').click(function (e) {
+      e.preventDefault();
+      $(this).tab('show');
+    })
+  </script>
 
   <script type="text/javascript">
 
@@ -56,6 +63,8 @@
 
   });
   </script>
+  
+
 
 </body>
 </html>
