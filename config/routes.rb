@@ -2,7 +2,6 @@ Showroom::Application.routes.draw do
   get "dashboard/index"
   get "dashboard/landing"
   get "dashboard/show"
-  get "room/index"
 
   #get "welcome/index"
   root :to => "welcome#index"
