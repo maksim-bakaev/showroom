@@ -278,3 +278,25 @@ body > .navbar .brand, body > .navbar .brand:hover {
 	transition: all .2s linear;*/
 }
 
+//Modal conver
+
+.modal.modal-cover, .modal-cover.fade.in {
+  width: 900px;
+  max-width: 100%;
+  margin-left: -450px;
+  top: 12%;
+  background-color: rgba(255, 255, 255, 0.0);
+  border: 0px solid #999;
+  border: 0px solid rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  outline: none;
+}
+

@@ -130,7 +130,7 @@ body {
 /* line 148, ../../../app/assets/stylesheets/skins/olive.css.sass */
 .landing.landing.landing-share h2 {
   font-size: 22px;
-  line-height: 44px;
+  line-height: 26px;
   padding: 0;
   color: #3d3d3d;
 }
@@ -156,7 +156,7 @@ body {
 /* line 167, ../../../app/assets/stylesheets/skins/olive.css.sass */
 .landing.landing.landing-friend h2 {
   font-size: 15.5px;
-  line-height: 25.5px;
+  line-height: 35.5px;
   padding: 0;
   color: #f26522;
 }
