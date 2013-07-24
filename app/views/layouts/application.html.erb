@@ -3,13 +3,14 @@
 <head>
   <title>Showroom</title>
   <%= csrf_meta_tags %>
-  <%= stylesheet_link_tag    "application" %>
+  <%= stylesheet_link_tag "application" %>
 </head>
 <body>
-
+  
   <%=render 'layouts/head' %>  
+  
   <%= yield %>
-
+  
   <!-- Modal -->
   <div id="myModal" class="modal hide fade higherWider" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-header">
@@ -24,8 +25,33 @@
     </div>
   </div>
   <!-- /Modal -->
+  
+  <!-- Modal switch js feature-->
+  <div id="myModal-switch" class="modal hide fade higherWider" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      <h3 id="myModalLabel">Switch</h3>
+    </div>
+    <div class="modal-body">
+      <button class="btn btn-primary btn-block" onclick="changeStyle('landing')">Switch to second Landing stylesheet</button>
+      <button class="btn btn-primary btn-block" onclick="changeStyle('alternate')">Switch to second Alternative stylesheet</button>
+      <button class="btn btn-primary btn-block" onclick="changeStyle('breeze')">Switch to second Breeze stylesheet</button>
+      <br>
+    </div>
+  </div>
+  <!-- /Modal switch js feature-->
 
   <%= javascript_include_tag "application" %>
+  
+  <script>
+    function changeStyle(title) {
+    var lnks = document.getElementsByTagName('link');
+    for (var i = lnks.length - 1; i >= 0; i--) {
+    if (lnks[i].getAttribute('rel').indexOf('style')> -1 && lnks[i].getAttribute('title')) {
+    lnks[i].disabled = true;
+    if (lnks[i].getAttribute('title') == title) lnks[i].disabled = false;
+    }}}
+  </script>
   
   <script>
     $('#myTab a').click(function (e) {

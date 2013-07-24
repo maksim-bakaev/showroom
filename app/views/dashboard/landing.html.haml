@@ -1,0 +1,83 @@
+=render 'layouts/skins'
+%br
+%br
+.container.landing-wrapper
+  .well.landing.landing-share
+    .row-fluid
+      .span12
+        %h1 Get $10 back on this order
+        %p 
+          %small Refer your friends, and they'll get $10 cash back on their purchase! ...and so will YOU.
+        %br
+    .row-fluid
+      .span6
+        .row-fluid
+          .span5
+            %img{:alt => "Image", :src => "/img/test-image.png", class: "img"}
+          .span7
+            %h2 $10 Cash Back At The Kosher Express!
+        .row-fluid
+          .span12
+            %p Get $10 cash back on any purchase using this special friends only offer and I'll get $10 back too!
+      .span6
+        .btn-group.btn-group-vertical
+          %button.btn.btn-block.btn-large.btn-primary.btn-share{:type => "button"} 
+            %i.icon-facebook
+            Share on Facebook
+          %button.btn.btn-block.btn-large.btn-share{:type => "button"} 
+            %i.icon-twitter
+            Tweet it
+          %button.btn.btn-block.btn-large.btn-share{:type => "button"} 
+            %i.icon-envelope-alt
+            Mail it
+        .clearfix
+        %br
+        %form
+          %fieldset
+            %label Share your referral link:
+            %input{:type => "text", :value => "http://curebit.com/x/z9oXQW", class: "input-block-level"}
+        .clearfix  
+    .row-fluid
+      .span12
+        .footer.text-center 
+          %br
+          %small This offer is only valid until Jul 29, 2013 3:26am (PDT)
+    .clearfix
+    
+//Friend Landing
+
+%br
+%br
+.container
+  .well.landing.landing-friend
+    .row-fluid
+      .span3
+        %img{:alt => "Image", :src => "/img/test-image.png", class: "img"}
+      .span9
+        %h1 $10 Cash Back At The Kosher Express!
+        %p Get $10 cash back on any purchase using this special friends only offer and I'll get $10 back too! 
+    .clearfix
+    .row-fluid
+      .span12
+        .alert.alert-info.text-center
+          %span Deal Expires in
+          %strong 5 Days, 20 Hours, 7 Minutes, 29 Seconds
+    .clearfix
+    .row-fluid
+      .span6
+        %h2 How Does This Rebate Work?
+        %p After your purchase, you will be emailed a confirmation with the rebate details.
+      .span6
+        %h2 Questions ?
+        %address
+          290 Division Street, Suite 405
+          %br
+          San Francisco, CA 94103
+          %br
+          = link_to "first.last@example.com", "mailto:#"
+    .clearfix
+    .row-fluid
+      .span12
+        %button.btn.btn-large.btn-block.btn-success{:type => "button"} Proceed »
+    .clearfix
+
