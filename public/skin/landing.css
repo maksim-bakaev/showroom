@@ -140,27 +140,28 @@ body {
 /* line 155, ../../../app/assets/stylesheets/skins/landing.css.sass */
 .landing.landing.landing-friend h1 {
   font-size: 25px;
-  line-height: 45px;
+  line-height: 30px;
   padding: 0;
+  margin: 15px 0px;
   color: #34495e;
 }
-/* line 160, ../../../app/assets/stylesheets/skins/landing.css.sass */
+/* line 161, ../../../app/assets/stylesheets/skins/landing.css.sass */
 .landing.landing.landing-friend h2 {
   font-size: 15.5px;
   line-height: 40.5px;
   padding: 0;
   color: #34495e;
 }
-/* line 165, ../../../app/assets/stylesheets/skins/landing.css.sass */
+/* line 166, ../../../app/assets/stylesheets/skins/landing.css.sass */
 .landing.landing.landing-friend p {
   margin: 10px 0px;
   font-size: 135%;
 }
-/* line 168, ../../../app/assets/stylesheets/skins/landing.css.sass */
+/* line 169, ../../../app/assets/stylesheets/skins/landing.css.sass */
 .landing.landing.landing-friend .alert {
   margin: 20px 0 5px;
 }
-/* line 170, ../../../app/assets/stylesheets/skins/landing.css.sass */
+/* line 171, ../../../app/assets/stylesheets/skins/landing.css.sass */
 .landing.landing.landing-friend a {
   color: #3498db;
 }
