@@ -1,0 +1,75 @@
+//Nav
+= content_for :dashboard_nav do
+  %li.dropdown.active
+    %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+      Today
+      %b.caret
+    %ul#nav.dropdown-menu
+      %li
+        %a{"data-filter" => "*", :href => "#"} All
+      %li
+        %a{"data-filter" => ".cat1", :href => "#"} Beauty
+      %li
+        %a{"data-filter" => ".cat2", :href => "#"} Health
+      %li
+        %a{"data-filter" => ".cat3", :href => "#"} Goods
+      %li
+        %a{"data-filter" => ".cat4", :href => "#"} Services
+      %li.divider
+      %li.nav-header Tourism
+      %li
+        %a{:href => "#"} Hotels
+      %li
+        %a{:href => "#"} Tours
+//Content
+#content.root-container
+  = render 'dashboard/test/item'
+  = render 'dashboard/test/item4'
+  = render 'dashboard/test/item'
+  = render 'dashboard/test/item2'
+  = render 'dashboard/test/item4'
+  = render 'dashboard/test/item2'
+  = render 'dashboard/test/item4'
+  = render 'dashboard/test/item3'
+  = render 'dashboard/test/item'
+  = render 'dashboard/test/item2'
+  = render 'dashboard/test/item'
+  = render 'dashboard/test/item'
+  = render 'dashboard/test/item4'
+  = render 'dashboard/test/item'
+  = render 'dashboard/test/item3'
+  = render 'dashboard/test/item3'
+  = render 'dashboard/test/item'
+  = render 'dashboard/test/item2'
+  = render 'dashboard/test/item'
+  = render 'dashboard/test/item'
+  = render 'dashboard/test/item2'
+  = render 'dashboard/test/item'
+  = render 'dashboard/test/item3'
+  = render 'dashboard/test/item'
+  = render 'dashboard/test/item3'
+  = render 'dashboard/test/item4'
+  = render 'dashboard/test/item2'
+  = render 'dashboard/test/item4'
+  = render 'dashboard/test/item'
+  = render 'dashboard/test/item4'
+  = render 'dashboard/test/item'
+  = render 'dashboard/test/item3'
+  = render 'dashboard/test/item3'
+  = render 'dashboard/test/item'
+  = render 'dashboard/test/item2'
+  = render 'dashboard/test/item'
+  = render 'dashboard/test/item'
+  = render 'dashboard/test/item2'
+  = render 'dashboard/test/item'
+  = render 'dashboard/test/item3'
+  = render 'dashboard/test/item'
+  = render 'dashboard/test/item3'
+  = render 'dashboard/test/item4'
+  = render 'dashboard/test/item'
+  = render 'dashboard/test/item'
+  = render 'dashboard/test/item'
+  = render 'dashboard/test/item4'
+  = render 'dashboard/test/item'
+  = render 'dashboard/test/item'
+  = render 'dashboard/test/item4'

@@ -1,3 +1,23 @@
+//Nav
+= content_for :landing_nav do
+  %li.divider-vertical
+  %li.dropdown
+    %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+      Switch
+      %b.caret
+    %ul.dropdown-menu
+      %li
+        %a{:href => "#", :onclick => "changeStyle('landing')"} Switch Landing
+      %li
+        %a{:href => "#", :onclick => "changeStyle('alternate')"} Switch Alternative
+      %li
+        %a{:href => "#", :onclick => "changeStyle('breeze')"} Switch Breeze
+      %li
+        %a{:href => "#", :onclick => "changeStyle('olive')"} Switch Olive
+      %li.divider
+      %li
+        %a{:href => "#"} Show more
+//Content
 %br
 %br
 .container

@@ -1,0 +1,19 @@
+.navbar.navbar-inverse.navbar-fixed-top
+  .navbar-inner
+    .container
+      %button.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse", :type => "button"}
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.brand{:href => "/"} Just for fun
+      .nav-collapse.collapse
+        %ul.nav.pull-left
+          %li
+            %a{:href => "/dashboard/index"} Dashboard
+          = yield :dashboard_nav
+        %ul.nav.pull-right
+          %li
+            %a{:href => "/dashboard/landing"} Landing page
+          %li
+            %a{:href => "/dashboard/show"} Show
+          = yield :landing_nav
