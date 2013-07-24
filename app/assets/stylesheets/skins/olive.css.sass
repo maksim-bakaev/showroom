@@ -1,22 +1,22 @@
-$body_background: #fff
-$landing_background: whitesmoke
-$landing_color: #34495e
+$body_background: whitesmoke
+$landing_background: #fff 
+$landing_color: #3d3d3d
 $white: #fff
-$color-btn: #7f8c8d
-$color-btn-h: #95a5a6
-$color-btn-success: #2ecc71
-$color-btn-success-h: #58d68d
-$color-btn-primary: #1abc9c
-$color-btn-primary-h: #48c9b0
+$color-btn: $landing_background
+$color-btn-h: $landing_background
+$color-btn-success: #8fa758
+$color-btn-success-h: #e1eacd
+$color-btn-primary: $landing_background
+$color-btn-primary-h: $landing_background
 $grayLight: #bdc3c7
-$landing_h: #34495e
-$landing_h_alternate: #34495e
+$landing_h: #3d3d3d
+$landing_h_alternate: #f26522
 $link_color: #3498DB
 
-$font-family: "Lato", sans-serif
+$font-family: Geneva,Helvetica,Arial,sans-serif
 
-$landing_border: 1px solid #ccc
-$landing_alternate_border: 1px dashed #7F8C8D
+$landing_border: 8px solid #93af5b
+$landing_alternate_border: 1px solid #93af5b
 
 @mixin border-radius
   -moz-border-radius: 0px
@@ -63,6 +63,7 @@ body
   //type
   margin: 0 auto
   max-width: 630px
+  padding: 25px
   img
     @include img-border-radius
     border: $landing_alternate_border
@@ -71,11 +72,11 @@ body
 
   //Components    
   .btn
-    border: none
+    border: 2px solid $link_color
     background: $color-btn
-    color: $white
-    padding: 12px
-    line-height: 24px
+    color: $link_color
+    padding: 9px 12px 10px
+    line-height: 22px
     text-decoration: none
     text-shadow: none
     @include box-shadow(none)
@@ -84,7 +85,7 @@ body
     &:hover, &:focus
       background-color: $color-btn-h
       background-position: 0 0
-      color: $white
+      color: $link_color
       outline: none
       @include transition(0.25s)
       -webkit-backface-visibility: hidden
@@ -92,8 +93,11 @@ body
   //btn-success
   .btn.btn-success
     background-color: $color-btn-success
+    border: 0px
+    color: $white
     &:hover, &:focus
       background-color: $color-btn-success-h
+      color: $landing_color
 
   //btn-primary
   .btn.btn-primary
@@ -101,6 +105,17 @@ body
     &:hover, &:focus
       background-color: $color-btn-primary-h
 
+  .btn-group-vertical
+    display: block
+  .btn-share
+    text-align: left
+    //margin-bottom: 10px
+    [class^="icon-"], [class*=" icon-"]
+      display: inline-block
+      width: 35px
+      text-align: center
+      color: $link_color
+          
   //form
   input
     &[type="text"]
@@ -118,16 +133,8 @@ body
     border: $landing_alternate_border
     @include rounded_corners(10px)
     color: $landing_color
-
-  .btn-group-vertical
-    display: block
-  .btn-share
-    text-align: left
-    //margin-bottom: 10px
-    [class^="icon-"], [class*=" icon-"]
-      display: inline-block
-      width: 35px
-      text-align: center
+    strong
+      color: #a33
       
   //Landing share
   &.landing.landing-share
@@ -140,7 +147,7 @@ body
       color: $landing_h
     h2
       font-size: 22px
-      line-height: 24px
+      line-height: 44px
       padding: 0
       color: $landing_h
     p, label
@@ -154,12 +161,12 @@ body
   &.landing.landing-friend
     h1
       font-size: 25px
-      line-height: 45px
+      line-height: 35px
       padding: 0
       color: $landing_h
     h2
       font-size: 15.5px
-      line-height: 40.5px
+      line-height: 25.5px
       padding: 0
       color: $landing_h_alternate
     p
@@ -169,6 +176,3 @@ body
       margin: 20px 0 5px
     a
       color: $link_color
-
-
-
