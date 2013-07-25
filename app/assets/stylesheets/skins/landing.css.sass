@@ -80,6 +80,7 @@ body
     text-shadow: none
     @include box-shadow(none)
     @include transition(0.25s)
+    @include rounded_corners(0px)
     -webkit-backface-visibility: hidden
     &:hover, &:focus
       background-color: $color-btn-h
@@ -92,6 +93,7 @@ body
   //btn-success
   .btn.btn-success
     background-color: $color-btn-success
+    margin: 15px 0px 0px
     &:hover, &:focus
       background-color: $color-btn-success-h
 
@@ -159,13 +161,13 @@ body
       margin: 15px 0px
       color: $landing_h
     h2
-      font-size: 15.5px
+      font-size: 18.5px
       line-height: 40.5px
       padding: 0
       color: $landing_h_alternate
-    p
+    p, address
       margin: 10px 0px
-      font-size: 135%
+      font-size: 17px
     .alert
       margin: 20px 0 5px
     a
