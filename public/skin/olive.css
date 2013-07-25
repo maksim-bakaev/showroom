@@ -13,9 +13,9 @@ body {
   -webkit-border-radius: 0px;
   border-radius: 0px;
   background: white;
-  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0);
   margin: 0 auto;
   max-width: 630px;
   padding: 25px;
@@ -63,37 +63,38 @@ body {
 .landing .btn.btn-success {
   background-color: #8fa758;
   border: 0px;
+  margin: 15px 0px 0px;
   color: white;
 }
-/* line 98, ../../../app/assets/stylesheets/skins/olive.css.sass */
+/* line 99, ../../../app/assets/stylesheets/skins/olive.css.sass */
 .landing .btn.btn-success:hover, .landing .btn.btn-success:focus {
   background-color: #e1eacd;
   color: #3d3d3d;
 }
-/* line 103, ../../../app/assets/stylesheets/skins/olive.css.sass */
+/* line 104, ../../../app/assets/stylesheets/skins/olive.css.sass */
 .landing .btn.btn-primary {
   background-color: white;
 }
-/* line 105, ../../../app/assets/stylesheets/skins/olive.css.sass */
+/* line 106, ../../../app/assets/stylesheets/skins/olive.css.sass */
 .landing .btn.btn-primary:hover, .landing .btn.btn-primary:focus {
   background-color: white;
 }
-/* line 108, ../../../app/assets/stylesheets/skins/olive.css.sass */
+/* line 109, ../../../app/assets/stylesheets/skins/olive.css.sass */
 .landing .btn-group-vertical {
   display: block;
 }
-/* line 110, ../../../app/assets/stylesheets/skins/olive.css.sass */
+/* line 111, ../../../app/assets/stylesheets/skins/olive.css.sass */
 .landing .btn-share {
   text-align: left;
 }
-/* line 113, ../../../app/assets/stylesheets/skins/olive.css.sass */
+/* line 114, ../../../app/assets/stylesheets/skins/olive.css.sass */
 .landing .btn-share [class^="icon-"], .landing .btn-share [class*=" icon-"] {
   display: inline-block;
   width: 35px;
   text-align: center;
   color: #3498db;
 }
-/* line 121, ../../../app/assets/stylesheets/skins/olive.css.sass */
+/* line 122, ../../../app/assets/stylesheets/skins/olive.css.sass */
 .landing input[type="text"] {
   border: 2px solid #bdc3c7;
   color: #3d3d3d;
@@ -105,7 +106,7 @@ body {
   -moz-box-shadow: shadow;
   box-shadow: shadow;
 }
-/* line 131, ../../../app/assets/stylesheets/skins/olive.css.sass */
+/* line 132, ../../../app/assets/stylesheets/skins/olive.css.sass */
 .landing .alert.alert-info {
   background-color: white;
   border: 1px solid #93af5b;
@@ -113,12 +114,14 @@ body {
   -webkit-border-radius: 10px;
   border-radius: 10px;
   color: #3d3d3d;
+  border-width: 1px 0px;
+  border-radius: 0px;
 }
-/* line 136, ../../../app/assets/stylesheets/skins/olive.css.sass */
+/* line 139, ../../../app/assets/stylesheets/skins/olive.css.sass */
 .landing .alert.alert-info strong {
   color: #aa3333;
 }
-/* line 141, ../../../app/assets/stylesheets/skins/olive.css.sass */
+/* line 144, ../../../app/assets/stylesheets/skins/olive.css.sass */
 .landing.landing.landing-share h1 {
   font-size: 25px;
   line-height: 25px;
@@ -127,49 +130,49 @@ body {
   border-bottom: 1px solid #93af5b;
   color: #3d3d3d;
 }
-/* line 148, ../../../app/assets/stylesheets/skins/olive.css.sass */
+/* line 151, ../../../app/assets/stylesheets/skins/olive.css.sass */
 .landing.landing.landing-share h2 {
   font-size: 22px;
   line-height: 26px;
   padding: 0;
   color: #3d3d3d;
 }
-/* line 153, ../../../app/assets/stylesheets/skins/olive.css.sass */
+/* line 156, ../../../app/assets/stylesheets/skins/olive.css.sass */
 .landing.landing.landing-share p, .landing.landing.landing-share label {
-  font-size: 120%;
+  font-size: 16px;
 }
-/* line 155, ../../../app/assets/stylesheets/skins/olive.css.sass */
+/* line 158, ../../../app/assets/stylesheets/skins/olive.css.sass */
 .landing.landing.landing-share p {
   margin: 15px 0px;
 }
-/* line 157, ../../../app/assets/stylesheets/skins/olive.css.sass */
+/* line 160, ../../../app/assets/stylesheets/skins/olive.css.sass */
 .landing.landing.landing-share a {
   color: #3498db;
 }
-/* line 162, ../../../app/assets/stylesheets/skins/olive.css.sass */
+/* line 165, ../../../app/assets/stylesheets/skins/olive.css.sass */
 .landing.landing.landing-friend h1 {
   font-size: 25px;
   line-height: 35px;
   padding: 0;
   color: #3d3d3d;
 }
-/* line 167, ../../../app/assets/stylesheets/skins/olive.css.sass */
+/* line 170, ../../../app/assets/stylesheets/skins/olive.css.sass */
 .landing.landing.landing-friend h2 {
   font-size: 15.5px;
   line-height: 35.5px;
   padding: 0;
   color: #f26522;
 }
-/* line 172, ../../../app/assets/stylesheets/skins/olive.css.sass */
-.landing.landing.landing-friend p {
-  margin: 10px 0px;
-  font-size: 135%;
-}
 /* line 175, ../../../app/assets/stylesheets/skins/olive.css.sass */
+.landing.landing.landing-friend p, .landing.landing.landing-friend address {
+  margin: 10px 0px;
+  font-size: 16px;
+}
+/* line 178, ../../../app/assets/stylesheets/skins/olive.css.sass */
 .landing.landing.landing-friend .alert {
   margin: 20px 0 5px;
 }
-/* line 177, ../../../app/assets/stylesheets/skins/olive.css.sass */
+/* line 180, ../../../app/assets/stylesheets/skins/olive.css.sass */
 .landing.landing.landing-friend a {
   color: #3498db;
 }
