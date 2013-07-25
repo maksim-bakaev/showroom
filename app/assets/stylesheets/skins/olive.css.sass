@@ -57,9 +57,9 @@ body
   border: $landing_border
   @include border-radius
   background: $landing_background
-  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)
+  -moz-box-shadow: 0 0 0px rgba(0, 0, 0, 0.0)
+  -webkit-box-shadow: 0 0 0px rgba(0, 0, 0, 0.0)
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.0)
   //type
   margin: 0 auto
   max-width: 630px
@@ -133,6 +133,8 @@ body
     border: $landing_alternate_border
     @include rounded_corners(10px)
     color: $landing_color
+    border-width: 1px 0px
+    border-radius: 0px
     strong
       color: #a33
       
