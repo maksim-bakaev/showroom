@@ -65,7 +65,7 @@ body
   max-width: 630px
   padding: 25px
   img
-    @include img-border-radius
+    @include rounded_corners(0)
     border: $landing_alternate_border
     padding: 3px
     max-width: 90%
@@ -94,6 +94,9 @@ body
   .btn.btn-success
     background-color: $color-btn-success
     margin: 15px 0px 0px
+    font-size: 22px
+    line-height: 30px
+    @include rounded_corners(0)
     &:hover, &:focus
       background-color: $color-btn-success-h
 
@@ -118,7 +121,8 @@ body
   .alert.alert-info
     background-color: $landing_background
     border: $landing_alternate_border
-    @include rounded_corners(10px)
+    @include rounded_corners(0)
+    border-width: 1px 0px 1px 0px
     color: $landing_color
 
   .btn-group-vertical
