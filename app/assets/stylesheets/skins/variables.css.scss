@@ -240,8 +240,15 @@ $fluidGridGutterWidth1200: percentage($gridGutterWidth1200/$gridRowWidth1200);
 // 768px-979px
 $fluidGridColumnWidth768: percentage($gridColumnWidth768/$gridRowWidth768);
 $fluidGridGutterWidth768: percentage($gridGutterWidth768/$gridRowWidth768);
+
+@import 'components/mixin';
+
 @import 'bootstrap';
 @import 'bootstrap/responsive';
+@import 'font-awesome';
+@import 'components/dashboard';
+//@import 'skins/landing';
+//@import 'components/landing';
 
 /*Custom*/
 

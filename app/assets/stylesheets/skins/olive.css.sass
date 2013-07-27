@@ -1,181 +1,73 @@
-$body_background: whitesmoke
-$landing_background: #fff 
-$landing_color: #3d3d3d
+//Color
 $white: #fff
-$color-btn: $landing_background
-$color-btn-h: $landing_background
-$color-btn-success: #8fa758
-$color-btn-success-h: #e1eacd
-$color-btn-primary: $landing_background
-$color-btn-primary-h: $landing_background
-$grayLight: #bdc3c7
-$landing_h: #3d3d3d
-$landing_h_alternate: #f26522
-$link_color: #3498DB
 
-$font-family: Geneva,Helvetica,Arial,sans-serif
-
+//Global
+$body_background: whitesmoke
+//Landing
+$landing_background: #fff
+$font-family: Geneva, Helvetica, Arial, sans-serif
+$font-size: 15px
+$landing_color: #3d3d3d
 $landing_border: 8px solid #93af5b
-$landing_alternate_border: 1px solid #93af5b
-
+$landing_alternate_border: 1px dashed #93af5b
+$img-border: $landing_alternate_border
+$max-width: 630px
+$padding: 25px
 @mixin border-radius
   -moz-border-radius: 0px
   -webkit-border-radius: 0px
   border-radius: 0px
 
-//Rounded corners
-@mixin rounded_corners ($radius)
-  -moz-border-radius: $radius
-  -webkit-border-radius: $radius
-  border-radius: $radius
-    
+@mixin landing-shadow  
+  -moz-box-shadow: none
+  -webkit-box-shadow: none
+  box-shadow: none
+
+//img
 @mixin img-border-radius
   -moz-border-radius: 50%
   -webkit-border-radius: 50%
   border-radius: 50%
 
-@mixin box-shadow ($shadow)  
-  -webkit-box-shadow: shadow
-  -moz-box-shadow: shadow
-  box-shadow: shadow
+//btn
+$background-btn: #8fa758
+$background-btn-h: #8fa758
+$color-btn: $landing_color
+$font-shadow: none
+$line-height-btn: 28px
+$font-size-btn: $font-size + 3
+
+$background-btn-success: #8fa758
+$background-btn-success-h: #e1eacd
+$color-btn: $landing_color
+
+$background-btn-primary: #8fa758
+$background-btn-primary-h: #8fa758
+$color-btn: $landing_color
+
+$btn-icon-color: $white
+
+@mixin border-radius-btn
+  -moz-border-radius: 0px
+  -webkit-border-radius: 0px
+  border-radius: 0px
   
-@mixin transition ($s)  
-  -webkit-transition: $s
-  -moz-transition: $s
-  -o-transition: $s
-  transition: $s
+@mixin border-radius-btn-alt
+  -moz-border-radius: 0px
+  -webkit-border-radius: 0px
+  border-radius: 0px
 
-//Global
-body
-  background: $body_background
+//Type
+$grayLight: #bdc3c7
+$landing_h: #34495e
+$landing_h_alternate: #f26522
+$link_color: #3498DB
+$border-width: 1px 0px 1px 0px
 
-//Landing
-.landing
-  font-family: $font-family
-  font-size: 15px
-  color: $landing_color
-  border: $landing_border
-  @include border-radius
-  background: $landing_background
-  -moz-box-shadow: 0 0 0px rgba(0, 0, 0, 0.0)
-  -webkit-box-shadow: 0 0 0px rgba(0, 0, 0, 0.0)
-  box-shadow: 0 0 0px rgba(0, 0, 0, 0.0)
-  //type
-  margin: 0 auto
-  max-width: 630px
-  padding: 25px
-  img
-    @include img-border-radius
-    border: $landing_alternate_border
-    padding: 3px
-    max-width: 90%
 
-  //Components    
-  .btn
-    border: 2px solid $link_color
-    background: $color-btn
-    color: $link_color
-    padding: 9px 12px 10px
-    line-height: 22px
-    text-decoration: none
-    text-shadow: none
-    @include box-shadow(none)
-    @include transition(0.25s)
-    -webkit-backface-visibility: hidden
-    &:hover, &:focus
-      background-color: $color-btn-h
-      background-position: 0 0
-      color: $link_color
-      outline: none
-      @include transition(0.25s)
-      -webkit-backface-visibility: hidden
 
-  //btn-success
-  .btn.btn-success
-    background-color: $color-btn-success
-    border: 0px
-    margin: 15px 0px 0px
-    color: $white
-    &:hover, &:focus
-      background-color: $color-btn-success-h
-      color: $landing_color
+@import 'components/mixin'
+@import 'components/landing'
 
-  //btn-primary
-  .btn.btn-primary
-    background-color: $color-btn-primary
-    &:hover, &:focus
-      background-color: $color-btn-primary-h
 
-  .btn-group-vertical
-    display: block
-  .btn-share
-    text-align: left
-    //margin-bottom: 10px
-    [class^="icon-"], [class*=" icon-"]
-      display: inline-block
-      width: 35px
-      text-align: center
-      color: $link_color
-          
-  //form
-  input
-    &[type="text"]
-      border: 2px solid $grayLight
-      color: $landing_color
-      font-size: 105%
-      padding: 20px 5px
-      height: 22px
-      text-indent: 6px
-      @include box-shadow(none)
 
-  //alert
-  .alert.alert-info
-    background-color: $landing_background
-    border: $landing_alternate_border
-    @include rounded_corners(10px)
-    color: $landing_color
-    border-width: 1px 0px
-    border-radius: 0px
-    strong
-      color: #a33
-      
-  //Landing share
-  &.landing.landing-share
-    h1
-      font-size: 25px
-      line-height: 25px
-      padding: 0 0 15px
-      margin: 0
-      border-bottom: $landing_alternate_border
-      color: $landing_h
-    h2
-      font-size: 22px
-      line-height: 26px
-      padding: 0
-      color: $landing_h
-    p, label
-      font-size: 16px
-    p
-      margin: 15px 0px
-    a
-      color: $link_color
-
-  //Landing friend
-  &.landing.landing-friend
-    h1
-      font-size: 25px
-      line-height: 35px
-      padding: 0
-      color: $landing_h
-    h2
-      font-size: 15.5px
-      line-height: 35.5px
-      padding: 0
-      color: $landing_h_alternate
-    p, address
-      margin: 10px 0px
-      font-size: 16px
-    .alert
-      margin: 20px 0 5px
-    a
-      color: $link_color

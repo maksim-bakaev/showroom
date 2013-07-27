@@ -70,3 +70,17 @@
 .container
   =render 'dashboard/show_item'
 
+//Content
+%br
+%br
+.container
+  / Button to trigger modal
+  %center
+    %br
+    %br
+    %br
+    %a.btn.btn-large.btn-primary{"data-toggle" => "modal", :href => "#myModal", :role => "button"} Launch Modal
+  / Modal
+  #myModal.modal.modal-cover.hide.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "screen", :tabindex => "-1"}
+    =render 'dashboard/show_item'  
+
