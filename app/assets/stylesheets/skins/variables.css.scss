@@ -247,8 +247,8 @@ $fluidGridGutterWidth768: percentage($gridGutterWidth768/$gridRowWidth768);
 @import 'bootstrap/responsive';
 @import 'font-awesome';
 @import 'components/dashboard';
-//@import 'skins/landing';
-//@import 'components/landing';
+@import 'skins/landing';
+@import 'components/landing';
 
 /*Custom*/
 
@@ -276,9 +276,9 @@ body > .navbar .brand, body > .navbar .brand:hover {
 //Modal conver
 
 .modal.modal-cover, .modal-cover.fade.in {
-  width: 900px;
+  width: 690px;
   max-width: 100%;
-  margin-left: -450px;
+  margin-left: -345px;
   top: 11%;
   background-color: rgba(255, 255, 255, 0.0);
   border: 0px solid #999;

@@ -1,0 +1,41 @@
+.well.landing.landing-share
+  .row-fluid
+    .span12
+      %h1 Get $10 back on this order
+      %p 
+        %small Refer your friends, and they'll get $10 cash back on their purchase! ...and so will YOU.
+      %br
+  .row-fluid
+    .span7
+      .row-fluid
+        .span4
+          %img{:alt => "Image", :src => "/img/test-image.png", class: "img"}
+        .span8
+          %h2 $10 Cash Back At The Kosher Express!
+      .row-fluid
+        .span12
+          %p Get $10 cash back on any purchase using this special friends only offer and I'll get $10 back too!
+    .span5
+      .group-vertical
+        %button.btn.btn-block.btn-large.btn-primary.btn-share{:type => "button"} 
+          %i.icon-facebook
+          Share on Facebook
+        %button.btn.btn-block.btn-large.btn-share{:type => "button"} 
+          %i.icon-twitter
+          Tweet it
+        %button.btn.btn-block.btn-large.btn-share{:type => "button"} 
+          %i.icon-envelope-alt
+          Mail it
+      .clearfix
+      %br
+      %form
+        %fieldset
+          %label Share your referral link:
+          %input{:type => "share", :value => "http://curebit.com/x/z9oXQW", class: "input-block-level"}
+      .clearfix  
+  .row-fluid
+    .span12
+      .footer.text-center 
+        %br
+        %small This offer is only valid until Jul 29, 2013 3:26am (PDT)
+  .clearfix

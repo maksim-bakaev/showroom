@@ -9,17 +9,21 @@
       %li
         %a{:href => "#", :onclick => "changeStyle('landing')"} Switch Landing
       %li
-        %a{:href => "#", :onclick => "changeStyle('alternate')"} Switch Alternative
-      %li
-        %a{:href => "#", :onclick => "changeStyle('breeze')"} Switch Breeze
-      %li
         %a{:href => "#", :onclick => "changeStyle('olive')"} Switch Olive
       %li.divider
       %li
         %a{:href => "#"} Show more
 //Content
-%br
-%br
 .container
-  =render 'dashboard/show_item'
+  %br
+  %br
+  .container-toggle{:style => "display: block;"}
+    =render 'dashboard/show_item'
+  .container-toggle{:style => "display: none;"}
+    =render 'dashboard/new'
+  %br
+  %br
+  //=render 'dashboard/share'
+  //%br
+  //%br
 

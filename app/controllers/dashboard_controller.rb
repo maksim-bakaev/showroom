@@ -4,7 +4,6 @@ class DashboardController < ApplicationController
   end
   
   def landing
-    render layout: "landing"
   end
   
   def show

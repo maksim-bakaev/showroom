@@ -1,9 +1,9 @@
-/* line 49, ../../../app/assets/stylesheets/skins/olive.css.sass */
+/* line 4, ../../../app/assets/stylesheets/components/landing.css.sass */
 body {
   background: whitesmoke;
 }
 
-/* line 53, ../../../app/assets/stylesheets/skins/olive.css.sass */
+/* line 8, ../../../app/assets/stylesheets/components/landing.css.sass */
 .landing {
   font-family: Geneva, Helvetica, Arial, sans-serif;
   font-size: 15px;
@@ -13,166 +13,247 @@ body {
   -webkit-border-radius: 0px;
   border-radius: 0px;
   background: white;
-  -moz-box-shadow: 0 0 0px rgba(0, 0, 0, 0);
-  -webkit-box-shadow: 0 0 0px rgba(0, 0, 0, 0);
-  box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
   margin: 0 auto;
   max-width: 630px;
   padding: 25px;
 }
-/* line 67, ../../../app/assets/stylesheets/skins/olive.css.sass */
+/* line 20, ../../../app/assets/stylesheets/components/landing.css.sass */
 .landing img {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  border: 1px solid #93af5b;
+  border: 1px dashed #93af5b;
   padding: 3px;
   max-width: 90%;
 }
-/* line 74, ../../../app/assets/stylesheets/skins/olive.css.sass */
-.landing .btn {
-  border: 2px solid #3498db;
-  background: white;
-  color: #3498db;
-  padding: 9px 12px 10px;
-  line-height: 22px;
-  text-decoration: none;
-  text-shadow: none;
-  -webkit-box-shadow: shadow;
-  -moz-box-shadow: shadow;
-  box-shadow: shadow;
-  -webkit-transition: 0.25s;
-  -moz-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
-  -webkit-backface-visibility: hidden;
+/* line 25, ../../../app/assets/stylesheets/components/landing.css.sass */
+.landing small {
+  font-size: 80%;
 }
-/* line 85, ../../../app/assets/stylesheets/skins/olive.css.sass */
-.landing .btn:hover, .landing .btn:focus {
-  background-color: white;
-  background-position: 0 0;
-  color: #3498db;
-  outline: none;
-  -webkit-transition: 0.25s;
-  -moz-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
-  -webkit-backface-visibility: hidden;
-}
-/* line 94, ../../../app/assets/stylesheets/skins/olive.css.sass */
-.landing .btn.btn-success {
-  background-color: #8fa758;
-  border: 0px;
-  margin: 15px 0px 0px;
-  color: white;
-}
-/* line 99, ../../../app/assets/stylesheets/skins/olive.css.sass */
-.landing .btn.btn-success:hover, .landing .btn.btn-success:focus {
-  background-color: #e1eacd;
-  color: #3d3d3d;
-}
-/* line 104, ../../../app/assets/stylesheets/skins/olive.css.sass */
-.landing .btn.btn-primary {
-  background-color: white;
-}
-/* line 106, ../../../app/assets/stylesheets/skins/olive.css.sass */
-.landing .btn.btn-primary:hover, .landing .btn.btn-primary:focus {
-  background-color: white;
-}
-/* line 109, ../../../app/assets/stylesheets/skins/olive.css.sass */
-.landing .btn-group-vertical {
-  display: block;
-}
-/* line 111, ../../../app/assets/stylesheets/skins/olive.css.sass */
-.landing .btn-share {
-  text-align: left;
-}
-/* line 114, ../../../app/assets/stylesheets/skins/olive.css.sass */
-.landing .btn-share [class^="icon-"], .landing .btn-share [class*=" icon-"] {
-  display: inline-block;
-  width: 35px;
-  text-align: center;
-  color: #3498db;
-}
-/* line 122, ../../../app/assets/stylesheets/skins/olive.css.sass */
-.landing input[type="text"] {
-  border: 2px solid #bdc3c7;
-  color: #3d3d3d;
-  font-size: 105%;
-  padding: 20px 5px;
-  height: 22px;
-  text-indent: 6px;
-  -webkit-box-shadow: shadow;
-  -moz-box-shadow: shadow;
-  box-shadow: shadow;
-}
-/* line 132, ../../../app/assets/stylesheets/skins/olive.css.sass */
-.landing .alert.alert-info {
-  background-color: white;
-  border: 1px solid #93af5b;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  color: #3d3d3d;
-  border-width: 1px 0px;
-  border-radius: 0px;
-}
-/* line 139, ../../../app/assets/stylesheets/skins/olive.css.sass */
-.landing .alert.alert-info strong {
-  color: #aa3333;
-}
-/* line 144, ../../../app/assets/stylesheets/skins/olive.css.sass */
-.landing.landing.landing-share h1 {
-  font-size: 25px;
-  line-height: 25px;
+/* line 29, ../../../app/assets/stylesheets/components/landing.css.sass */
+.landing.landing-share h1 {
+  font-size: 150%;
   padding: 0 0 15px;
   margin: 0;
-  border-bottom: 1px solid #93af5b;
+  border-bottom: 1px dashed #93af5b;
   color: #3d3d3d;
 }
-/* line 151, ../../../app/assets/stylesheets/skins/olive.css.sass */
-.landing.landing.landing-share h2 {
-  font-size: 22px;
-  line-height: 26px;
+/* line 35, ../../../app/assets/stylesheets/components/landing.css.sass */
+.landing.landing-share h2 {
+  font-size: 140%;
+  line-height: 120%;
   padding: 0;
+  margin: 20px 0;
   color: #3d3d3d;
 }
-/* line 156, ../../../app/assets/stylesheets/skins/olive.css.sass */
-.landing.landing.landing-share p, .landing.landing.landing-share label {
-  font-size: 16px;
-}
-/* line 158, ../../../app/assets/stylesheets/skins/olive.css.sass */
-.landing.landing.landing-share p {
+/* line 41, ../../../app/assets/stylesheets/components/landing.css.sass */
+.landing.landing-share p {
+  font-size: 120%;
   margin: 15px 0px;
 }
-/* line 160, ../../../app/assets/stylesheets/skins/olive.css.sass */
-.landing.landing.landing-share a {
-  color: #3498db;
-}
-/* line 165, ../../../app/assets/stylesheets/skins/olive.css.sass */
-.landing.landing.landing-friend h1 {
-  font-size: 25px;
-  line-height: 35px;
+/* line 46, ../../../app/assets/stylesheets/components/landing.css.sass */
+.landing.landing-friend h1 {
+  font-size: 140%;
   padding: 0;
   color: #3d3d3d;
 }
-/* line 170, ../../../app/assets/stylesheets/skins/olive.css.sass */
-.landing.landing.landing-friend h2 {
-  font-size: 15.5px;
-  line-height: 35.5px;
+/* line 50, ../../../app/assets/stylesheets/components/landing.css.sass */
+.landing.landing-friend h2 {
+  font-size: 105%;
   padding: 0;
   color: #f26522;
 }
-/* line 175, ../../../app/assets/stylesheets/skins/olive.css.sass */
-.landing.landing.landing-friend p, .landing.landing.landing-friend address {
-  margin: 10px 0px;
-  font-size: 16px;
-}
-/* line 178, ../../../app/assets/stylesheets/skins/olive.css.sass */
-.landing.landing.landing-friend .alert {
+/* line 54, ../../../app/assets/stylesheets/components/landing.css.sass */
+.landing.landing-friend .alert {
   margin: 20px 0 5px;
+  padding: 15px;
 }
-/* line 180, ../../../app/assets/stylesheets/skins/olive.css.sass */
-.landing.landing.landing-friend a {
+/* line 57, ../../../app/assets/stylesheets/components/landing.css.sass */
+.landing.landing-friend .btn.btn-success {
+  margin: 25px 0 0px;
+}
+/* line 59, ../../../app/assets/stylesheets/components/landing.css.sass */
+.landing a {
   color: #3498db;
+}
+/* line 61, ../../../app/assets/stylesheets/components/landing.css.sass */
+.landing .footer {
+  text-align: center;
+  margin-top: 20px;
+}
+/* line 65, ../../../app/assets/stylesheets/components/landing.css.sass */
+.landing .btn {
+  border: none;
+  cursor: pointer;
+  padding: 9px 12px 10px;
+  text-decoration: none;
+  background: #8fa758;
+  color: #3d3d3d;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  line-height: 28px;
+  font-size: 18px;
+}
+/* line 78, ../../../app/assets/stylesheets/components/landing.css.sass */
+.landing .btn:hover, .landing .btn:focus {
+  background-color: #e1eacd;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+}
+/* line 82, ../../../app/assets/stylesheets/components/landing.css.sass */
+.landing .btn.btn-success {
+  background-color: #8fa758;
+  color: #3d3d3d;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+/* line 86, ../../../app/assets/stylesheets/components/landing.css.sass */
+.landing .btn.btn-success:hover, .landing .btn.btn-success:focus {
+  background-color: #e1eacd;
+}
+/* line 89, ../../../app/assets/stylesheets/components/landing.css.sass */
+.landing .btn.btn-primary {
+  color: #3d3d3d;
+  background-color: #3498db;
+}
+/* line 92, ../../../app/assets/stylesheets/components/landing.css.sass */
+.landing .btn.btn-primary:hover, .landing .btn.btn-primary:focus {
+  background-color: #78c5f8;
+}
+/* line 95, ../../../app/assets/stylesheets/components/landing.css.sass */
+.landing .group-vertical {
+  display: block;
+}
+/* line 97, ../../../app/assets/stylesheets/components/landing.css.sass */
+.landing .group-vertical .btn {
+  text-align: left;
+}
+/* line 100, ../../../app/assets/stylesheets/components/landing.css.sass */
+.landing .btn [class^="icon-"], .landing .btn [class*=" icon-"] {
+  display: inline-block;
+  width: 35px;
+  text-align: center;
+  color: #3d3d3d;
+}
+/* line 105, ../../../app/assets/stylesheets/components/landing.css.sass */
+.landing .btn-block {
+  display: block;
+  width: 100%;
+}
+/* line 109, ../../../app/assets/stylesheets/components/landing.css.sass */
+.landing form, .landing fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+/* line 113, ../../../app/assets/stylesheets/components/landing.css.sass */
+.landing label {
+  display: block;
+  line-height: 30px;
+}
+/* line 117, ../../../app/assets/stylesheets/components/landing.css.sass */
+.landing input[type="share"] {
+  border: 2px solid #bdc3c7;
+  color: #3d3d3d;
+  padding: 20px 5px;
+  margin: 0;
+  height: 22px;
+  line-height: 22px;
+  vertical-align: middle;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 130, ../../../app/assets/stylesheets/components/landing.css.sass */
+.landing .alert.alert-info {
+  background-color: white;
+  border: 1px dashed #93af5b;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  border-width: 1px 0px 1px 0px;
+  color: #3d3d3d;
+  text-align: center;
+}
+/* line 137, ../../../app/assets/stylesheets/components/landing.css.sass */
+.landing address {
+  font-style: normal;
+}
+
+/* line 141, ../../../app/assets/stylesheets/components/landing.css.sass */
+[contenteditable="true"] {
+  border: 1px dashed #cccccc;
+}
+
+/* line 2, ../../../app/assets/stylesheets/components/grid.css.sass */
+.clearfix {
+  clear: both;
+}
+
+/* line 5, ../../../app/assets/stylesheets/components/grid.css.sass */
+.row-fluid [class*="span"] {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  margin-left: 2.5641%;
+}
+/* line 14, ../../../app/assets/stylesheets/components/grid.css.sass */
+.row-fluid [class*="span"]:first-child {
+  margin-left: 0;
+}
+/* line 16, ../../../app/assets/stylesheets/components/grid.css.sass */
+.row-fluid .span3 {
+  width: 23.07692%;
+}
+/* line 18, ../../../app/assets/stylesheets/components/grid.css.sass */
+.row-fluid .span4 {
+  width: 31.62393%;
+}
+/* line 20, ../../../app/assets/stylesheets/components/grid.css.sass */
+.row-fluid .span5 {
+  width: 40.17094%;
+}
+/* line 22, ../../../app/assets/stylesheets/components/grid.css.sass */
+.row-fluid .span6 {
+  width: 48.71795%;
+}
+/* line 24, ../../../app/assets/stylesheets/components/grid.css.sass */
+.row-fluid .span7 {
+  width: 57.26496%;
+}
+/* line 26, ../../../app/assets/stylesheets/components/grid.css.sass */
+.row-fluid .span8 {
+  width: 65.81197%;
+}
+/* line 28, ../../../app/assets/stylesheets/components/grid.css.sass */
+.row-fluid .span9 {
+  width: 74.35897%;
+}
+
+@media (max-width: 480px) {
+  /* line 33, ../../../app/assets/stylesheets/components/grid.css.sass */
+  .row-fluid [class*="span"] {
+    width: 100%;
+    margin: 0;
+  }
 }

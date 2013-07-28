@@ -1,0 +1,21 @@
+!!!
+%html
+  %head
+    %title Showroom
+    = csrf_meta_tags
+    //= stylesheet_link_tag "skins/landing"
+    %link{:href => "/skin/landing.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}
+    / custom, olive
+  %body
+    %center
+      %br
+      %br
+      = link_to 'Landing', '#', class: 'btn landing-btn'
+      |
+      = link_to 'Olive', '#', class: 'btn olive-btn'
+      |
+      = link_to 'Edit', '#', class: 'btn edit-btn', :style => "display: inline-block;"
+      = link_to 'Show', '#', class: 'btn edit-btn', :style => "display: none;"
+    
+    = yield
+    = javascript_include_tag "custom-application"
