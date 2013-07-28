@@ -1,10 +1,10 @@
 $(".olive-btn").click (e) ->
   e.preventDefault()
-  $("link").attr "href", "/assets/skins/olive.css"
+  $("link").attr "href", "/skin/olive.css"
 
 $(".landing-btn").click (e) ->
   e.preventDefault()
-  $("link").attr "href", "/assets/skins/landing.css"
+  $("link").attr "href", "/skin/landing.css"
 
 $(".edit-btn").click (e) ->
   e.preventDefault()
