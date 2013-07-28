@@ -3,10 +3,10 @@
   %head
     %title Showroom
     = csrf_meta_tags
-    //= stylesheet_link_tag "skins/landing"
     = stylesheet_link_tag "application"
+    //= stylesheet_link_tag "skins/landing"
     //%link{:href => "/skin/landing.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}
-    / custom, olive
+    // custom, olive
   %body
     %center
       %br
@@ -19,4 +19,4 @@
       = link_to 'Show', '#', class: 'btn edit-btn', :style => "display: none;"
     
     = yield
-    = javascript_include_tag "custom-application"
+    //= javascript_include_tag "custom-application"
